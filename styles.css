@@ -1,21 +1,21 @@
-body{
+body,
+html{
   background-color: lavenderblush ;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .title{
   margin: 30px;
   margin-left: 45px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 .navbar {
   overflow: hidden;
   text-align: right; /* Align text to the right */
   padding: 20px; /* Add some padding */
   margin-top: -90px;
 }
-
 /* Style for the navbar links */
 .navbar a {
   display: inline-block;
@@ -27,10 +27,6 @@ body{
   font-size: 18px;
   transition: color 0.3s; /* Smooth transition for color change */
 }
-
-/* Hover effect */
-
-
 /* Underline effect on hover */
 .navbar a::after {
   content: '';
@@ -309,3 +305,44 @@ h1{
    .logo1 {
      filter: brightness(1.2) saturate(90%) hue-rotate(180deg);
    }
+
+
+   /* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .title {
+      margin: 10px; /* Adjust title margin for smaller screens */
+  }
+  .navbar {
+      margin-top: 10px; /* Adjust navbar margin for smaller screens */
+  }
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .home-content {
+      padding: 0 5%; /* Adjust padding for smaller screens */
+  }
+  .btn-box {
+      width: 100%; /* Make button box full width on smaller screens */
+  }
+  .btn-box a {
+      width: 100%; /* Make buttons full width on smaller screens */
+      margin-top: 10px; /* Adjust margin for buttons on smaller screens */
+  }
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 480px) {
+  .navbar {
+      text-align: center; /* Center navbar links on smaller screens */
+  }
+  .navbar a {
+      display: block; /* Make navbar links display as blocks on smaller screens */
+  }
+  .video-container {
+      margin: 0; /* Remove margin on smaller screens */
+  }
+  video {
+      margin-left: 0; /* Adjust video margin for smaller screens */
+  }
+}

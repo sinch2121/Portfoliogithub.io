@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="portfolio">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta property="og:title" content="Meta Tags Lab">
-        <link rel="stylesheet" href="styles.css">
-        </head>
-    <body>
-      <section class="first">
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav> <!-- Wrap navigation in a nav element -->
         <h3 class="title">Sinchana.</h3>
         <div class="navbar">
             <!-- Navbar links -->
@@ -20,26 +18,28 @@
             <a href="#The Skills">The Skills</a>
             <a href="#The Writing">The Writing</a>
         </div>
+    </nav>
 
-        <section class="home">
-            <div class="home-content">
-                <h1>Hi, I'm Sinchana Salimath</h1>
-                <p>A 19 year old undergrad armed with internet and creativity.
-                    Step into my virtual playground of Software Projects and idealized Blogs!</p>
-                <div class="btn-box">
-                   
-                    <a href="#Let's talk">Let's talk</a>
-                </div>
-            </div>
+    <section class="home">
+      <div class="home-content">
+          <h1>Hi, I'm Sinchana Salimath</h1>
+          <p>A 19 year old undergrad armed with internet and creativity.
+              Step into my virtual playground of Software Projects and idealized Blogs!</p>
+          <div class="btn-box">
+              <a href="#Let's talk">Let's talk</a>
+          </div>
+      </div>
 
-            <div class="video-container">
-                <video width="860" height="500" autoplay muted>
-                 <source src="pictures/pintme.mp4" type="video/mp4">
-                 <source src="pictures/pintme.mp4" type="video/mp4">
-                 Your browser does not support the video tag.
-               </video>
-               </div>
-        </section>
+
+     <div class="video-container">
+   <video width="100%" height="auto" autoplay muted> <!-- Make video responsive -->
+     <source src="pictures/pintme.mp4" type="video/mp4">
+    <source src="pictures/pintme.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+      </video>
+        </div>
+    </section>
+
 
         <section class="project" id="The Majors" id="Dive in">
             <h2 class="major">THE MAJORS</h2>
@@ -166,19 +166,16 @@
 
 
        
-            <footer id="Let's talk">
-              <h4>Get in touch with me!</h4>
-            
-              <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/sinchana-salimath-b6b26325b/"><ion-icon class="ln"name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://github.com/sinch2121"><ion-icon class="gb" name="logo-github"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/sinchanaa_/"><ion-icon class="insta"name="logo-instagram"></ion-icon></a></li>
-               </ul>
-               <p>Copyright &copy; 2023 by Sinchana Salimath. All rights reserved.</p>
-            
-                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-              
-            </section>
-            </footer>
-    </body>
+        <footer id="Let's talk">
+          <h4>Get in touch with me!</h4>
+          <ul class="icons">
+              <li><a href="https://www.linkedin.com/in/sinchana-salimath-b6b26325b/"><ion-icon class="ln"name="logo-linkedin"></ion-icon></a></li>
+              <li><a href="https://github.com/sinch2121"><ion-icon class="gb" name="logo-github"></ion-icon></a></li>
+              <li><a href="https://www.instagram.com/sinchanaa_/"><ion-icon class="insta"name="logo-instagram"></ion-icon></a></li>
+          </ul>
+          <p>Copyright &copy; 2023 by Sinchana Salimath. All rights reserved.</p>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      </footer>
+  </body>
+  </html>
