@@ -1,0 +1,311 @@
+body{
+  background-color: lavenderblush ;
+  margin: 0;
+  padding: 0;
+}
+.title{
+  margin: 30px;
+  margin-left: 45px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar {
+  overflow: hidden;
+  text-align: right; /* Align text to the right */
+  padding: 20px; /* Add some padding */
+  margin-top: -90px;
+}
+
+/* Style for the navbar links */
+.navbar a {
+  display: inline-block;
+  color: black; /* Text color */
+  padding: 10px 20px; /* Padding around text */
+  text-decoration: none; /* Remove underline */
+  position: relative; /* Position relative for pseudo-element */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Hover effect */
+
+
+/* Underline effect on hover */
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: transparent; /* Initially transparent */
+  transition: background-color 0.3s; /* Smooth transition for color change */
+}
+
+.navbar a:hover::after {
+  background-color: #5DADE2; /* Change to your desired color on hover */
+}
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+
+.home{
+  height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    padding-top: 4px;
+   
+}
+.home-content{
+    max-width: 600px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.home-content h1{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: skyblue;
+}
+
+.home-content p{
+    font-size: 20px;
+    margin: 20px 0 40px;
+}
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: skyblue;
+    border: 2px solid skyblue;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover{
+    color: skyblue;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: skyblue;
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+.video-container {
+    padding-left: 10px;
+     margin-right: 0;  /* Add some space to the right if needed */
+     padding-top: 20px;
+   }
+   video {
+     width: 230px;  /* Adjust the width as needed */
+     height: 230px; /* Adjust the height as needed */
+     border-radius: 50%;
+     margin-left: 60px;
+     margin-top: 30px;
+   }
+ 
+   .video {
+     float: left;
+     margin-right: 95px;
+ }
+ .polaroid {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 30px; /* Use 'auto' for horizontal centering */
+    border-radius: 10px;
+    width: 170px; /* Adjust the width as needed */
+  
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .polaroid-container {
+    display: flex;
+    justify-content: center; /* Center the polaroid cards horizontally */
+    margin: 50px auto; /* Use 'auto' for vertical centering */
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    text-align: center;
+  }
+  
+  .link p {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .link:hover p {
+    color:  #6A5ACD; /* Change the color on hover */
+    transform: scale(1.1); /* Add a scale effect on hover */
+  }
+  .project {
+    background-color: lavender;
+    padding-bottom: 10px;
+    margin-top: 120px;
+    text-align: center;
+  }
+  h2 {
+    color: black;
+    padding-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .me {
+    color: black;
+  
+    font-size: 20px;
+  }
+  @keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+  
+  h1 {
+    color: black;
+  }
+  .skills{
+    background-color: lemonchiffon;
+    padding: 40px;
+  }
+  .skill {
+    text-align: center;
+    padding-top: 60px
+  }
+  .container3{
+    display: flex;
+  justify-content: center; /* Center the polaroid cards horizontally */
+  margin: 50px auto; /* Use 'auto' for vertical centering */
+  align-items: center;
+  flex-wrap: wrap;
+  }
+  .card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 30px; /* Use 'auto' for horizontal centering */
+    border-radius: 10px;
+    width: 100px; /* Adjust the width as needed */
+  }
+  .image{
+    width: 100%;
+  border-radius: 10px;
+  }
+  .blogs{
+    background-color: beige;
+    padding: 40px;
+  }
+  .link p{
+     font-size: 15px;
+     padding-top: 20px;
+  }  
+
+  .polaroid-container2{
+    display: flex;
+  justify-content: center; /* Center the polaroid cards horizontally */
+  margin: 50px auto; /* Use 'auto' for vertical centering */
+  align-items: center;
+  flex-wrap: wrap;
+  }
+  .polaroid2 {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 30px; /* Use 'auto' for horizontal centering */
+    border-radius: 10px;
+    width: 140px; /* Adjust the width as needed */
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  h4{
+    color: white;
+    text-align: center;
+  }
+
+  .icons{
+    display: flex;
+    justify-content: center;
+   }
+   .icons li a:link,
+   .icons li a:visited {
+       text-decoration: none;
+       border: 0;
+       color: white;
+       font-size: 170%;
+   }
+   footer p{
+     color: white;
+     text-align: center;
+     
+   }
+   .ln:hover{
+     color: #0072b1 ;
+   }
+   .insta:hover{
+     color: #feda75;
+   }
+   .gb:hover{
+     color: #2b3137;
+   }
+   
+   footer{
+      background-image: url(pictures/footer2.jpg);
+      padding: 60px;
+   }
+   
+   
+   .icons li {
+     margin-right: 10px; 
+   }
+   .logo1{
+     width:10%;
+     padding-top: 20px;
+     padding-left: 20px;
+   }
+   
+   /* styles.css */
+   .logo1 {
+     filter: brightness(1.2) saturate(90%) hue-rotate(180deg);
+   }
